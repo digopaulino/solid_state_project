@@ -1,8 +1,8 @@
-# solid_state_project
-Solid State Physics Project
+# Solid State Physics Project
 
 
-# Proposed Exercise
+Proposed Exercise
+
 Calculate vibration frequencies and the set of displacements for a 1D chain of 100 and 1000 bodies of mass = 1kg, joined by equal springs of k = 1 kg/s²
 
 a) Density of states for w²
