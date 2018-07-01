@@ -17,4 +17,10 @@ D[1][0]=-k/m
 D[1][2]=-k/m
 D[2][1]=-k/m
 
-print(la.eig(D))
+
+eigvalues = la.eig(D)[0]
+eigvectors = la.eig(D)[1]
+
+print('Frequencies: ', eigvalues)
+print('Displacements: ', eigvectors)
+print('Displacement of the first mass: ', eigvectors[0])
