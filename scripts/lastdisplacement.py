@@ -5,7 +5,7 @@ x_axis=[]
 for i in range(0,n):
     x_axis.append(i+1)
 
-txt = 'w² = ', eigvalues[n-1]
+txt = 'w² = ', eigvalues[n-1].real
 
 plt.title('Gráfico do deslocamento das massas com a última frequência')
 plt.text(1,0.1,txt,fontsize=9)
