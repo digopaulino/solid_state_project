@@ -9,7 +9,7 @@ for i in range(0,n):
 m = randint(0,n-1)
 txt = 'w² = ', eigvalues[m].real
 
-title = 'Gráfico do deslocamento das massas com a frequencia ', m
+title = 'Deslocamento das massas com a frequencia ', m
 plt.title(title)
 
 plt.text(1,0.1,txt,fontsize=9)

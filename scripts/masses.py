@@ -25,8 +25,7 @@ eigvectors = v[ind]
 
 
 
-'''
+
 print('Frequencies: ', eigvalues)
 print('Displacements: ', eigvectors)
 print('Displacement of the first frequency: ', eigvectors[0])
-'''

@@ -7,7 +7,7 @@ for i in range(0,n):
 
 txt = 'w² = ', eigvalues[0].real
 
-plt.title('Gráfico do deslocamento das massas com a primeira frequência')
+plt.title('Deslocamento das massas com a primeira frequência')
 plt.text(1,0.145,txt,fontsize=9)
 plt.plot(x_axis, eigvectors[0], linestyle='--', marker='o', color='b')
 plt.xlabel('Corpo')
