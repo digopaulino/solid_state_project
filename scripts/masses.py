@@ -21,7 +21,8 @@ a, v = la.eig(D)
 
 ind = np.argsort(a) #Pegam índices pra ordenar crescentemente
 eigvalues = a[ind]
-eigvectors = v[:,ind]
+eigvectors = np.around(v[:,ind],5)
+
 '''
 print(D)
 print('Frequencies: ', eigvalues)
