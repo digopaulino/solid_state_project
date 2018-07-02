@@ -5,6 +5,7 @@ from random import randint
 x_axis=[]
 for i in range(0,n):
     x_axis.append(i+1)
+
 m = randint(0,n-1)
 txt = 'w² = ', eigvalues[m].real
 

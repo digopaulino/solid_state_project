@@ -17,8 +17,13 @@ for i in range(1,(n-1)):
 D[n-1][n-2]=-k/m
 D[n-1][n-1]=k/m
 
-eigvalues = la.eig(D)[0]
-eigvectors = la.eig(D)[1]
+a, v = la.eig(D)
+
+ind = np.argsort(a)[::1] #Pegam índices pra ordenar crescentemente
+eigvalues = a[ind]
+eigvectors = v[ind]
+
+
 
 '''
 print('Frequencies: ', eigvalues)
