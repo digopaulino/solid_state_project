@@ -4,7 +4,7 @@ from scipy import linalg as la
 
 m=1 #Mass
 k=1 #Elastic Constant
-n=100 #Number of masses
+n=2 #Number of masses
 
 D = np.zeros(shape=(n,n))
 
@@ -19,14 +19,12 @@ D[n-1][n-1]=k/m
 
 a, v = la.eig(D)
 
-ind = np.argsort(a)[::1] #Pegam índices pra ordenar crescentemente
+ind = np.argsort(a) #Pegam índices pra ordenar crescentemente
 eigvalues = a[ind]
-eigvectors = v[ind]
+eigvectors = v[:,ind]
 
-
-
-'''
+print(D)
 print('Frequencies: ', eigvalues)
 print('Displacements: ', eigvectors)
 print('Displacement of the first frequency: ', eigvectors[0])
-'''
+
