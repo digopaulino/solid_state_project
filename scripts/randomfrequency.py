@@ -13,7 +13,7 @@ title = 'Gráfico do deslocamento das massas com a frequencia ', m
 plt.title(title)
 
 plt.text(1,0.1,txt,fontsize=9)
-plt.plot(x_axis, eigvectors[m], linestyle='--', marker='o', color='b')
+plt.plot(x_axis, eigvectors[:,m], linestyle='--', marker='o', color='b')
 plt.xlabel('Corpo')
 #plt.xticks(x_axis)
 plt.ylabel('Deslocamento')

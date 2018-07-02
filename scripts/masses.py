@@ -20,13 +20,12 @@ D[n-1][n-1]=k/m
 a, v = la.eig(D)
 
 ind = np.argsort(a) #Pegam índices pra ordenar crescentemente
-eigvalues = np.around(a[ind],5)
-eigvectors = np.around(v[:,ind],5)
+eigvalues = np.around(a[ind],15)
+eigvectors = np.around(v[:,ind],15)
 
 '''
 print(D)
 print('Frequencies: ', eigvalues)
-print('Displacements: ', eigvectors)
+print('Displacements: \n', eigvectors)
 print('Displacement of the first frequency: ', eigvectors[0])
 '''
-
