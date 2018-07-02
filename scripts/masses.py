@@ -20,7 +20,7 @@ D[n-1][n-1]=k/m
 a, v = la.eig(D)
 
 ind = np.argsort(a) #Pegam índices pra ordenar crescentemente
-eigvalues = a[ind]
+eigvalues = np.around(a[ind],5)
 eigvectors = np.around(v[:,ind],5)
 
 '''
