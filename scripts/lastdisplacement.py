@@ -8,7 +8,7 @@ for i in range(0,n):
 txt = 'w² = ', eigvalues[n-1]
 
 plt.title('Gráfico do deslocamento das massas com a última frequência')
-plt.text(1,0.1,txt,fontsize=7)
+plt.text(1,0.1,txt,fontsize=9)
 plt.plot(x_axis, eigvectors[n-1], linestyle='--', marker='o', color='b')
 plt.xlabel('Corpo')
 #plt.xticks(x_axis)

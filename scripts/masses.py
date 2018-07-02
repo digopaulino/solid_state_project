@@ -20,6 +20,8 @@ D[n-1][n-1]=k/m
 eigvalues = la.eig(D)[0]
 eigvectors = la.eig(D)[1]
 
+print(eigvalues[0], ' and ', eigvalues[n-1])
+
 '''
 print('Frequencies: ', eigvalues)
 print('Displacements: ', eigvectors)
