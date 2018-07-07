@@ -5,6 +5,7 @@ from scipy import linalg as la
 m=1 #Mass
 k=1 #Elastic Constant
 n=100 #Number of masses
+n = int(input('Insira o número de massas: '))
 
 D = np.zeros(shape=(n,n))
 
@@ -22,10 +23,3 @@ a, v = la.eig(D)
 ind = np.argsort(a) #Pegam índices pra ordenar crescentemente
 eigvalues = np.around(a[ind],10)
 eigvectors = np.around(v[:,ind],10)
-
-'''
-print(D)
-print('Frequencies: ', eigvalues)
-print('Displacements: \n', eigvectors)
-print('Displacement of the first frequency: ', eigvectors[0])
-'''

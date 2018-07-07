@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 from masses import *
 import numpy as np
 
-size= 0.4
+size= 0.4 #4/size deve ser um número inteiro
 m = int(4/size)
 
 w2 = np.arange(0, 4, size)
@@ -22,9 +22,9 @@ print(counts)
 plt.title('Densidade de estados')
 plt.bar(x_axis, counts, width=size, color='w', edgecolor='r')
 plt.xticks(np.arange(0, 4.1, 0.4))
-plt.yticks(np.arange(0,100,1))
+plt.yticks(np.arange(0,400,1))
 plt.xlabel(r'$\omega^2$')
-plt.axis([-0.05, 4, 0, 30])
+plt.axis([-0.05, 4, 0, 30]) #ALTERAR ÚLTIMO VALOR PARA MUDAR VALOR MÁXIMO DE Y
 #plt.xticks(x_axis)
 plt.ylabel('Count')
 
