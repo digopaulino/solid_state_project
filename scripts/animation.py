@@ -5,7 +5,7 @@ import numpy as np
 
 # First set up the figure, the axis, and the plot element we want to animate
 fig = plt.figure()
-ax = plt.axes(xlim=(0, 100), ylim=(-0.08, 0.08))
+ax = plt.axes(xlim=(0, n), ylim=(-0.08, 0.08))
 line, = ax.plot([], [], 'o-', lw=2)
 text = ax.text(10,0.055, '')
 # initialization function: plot the background of each frame
