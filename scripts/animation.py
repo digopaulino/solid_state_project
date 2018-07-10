@@ -6,8 +6,13 @@ import numpy as np
 #Configurar a figura, antes de colocar os dados
 fig = plt.figure()
 ax = plt.axes(xlim=(450, 550), ylim=(-0.08, 0.08))
+
+plt.title('Deslocamento em funcão da frequência - 1000 massas')
+plt.xlabel('Corpo')
+plt.ylabel('Deslocamento')
+
 line, = ax.plot([], [], 'o-', lw=2)
-text = ax.text(500,0.055, '')
+text = ax.text(500,0.07, '')
 
 #Funcao de inicializacão: plota o background de cada frame
 def init():
@@ -31,6 +36,6 @@ anim = animation.FuncAnimation(fig, animate, init_func=init,
                                frames=n, interval=30, blit=True)
 
 
-anim.save('1000masses(450-550).mp4', fps=30, extra_args=['-vcodec', 'libx264'])
+anim.save('1000masses(450-550section).mp4', fps=30, extra_args=['-vcodec', 'libx264'])
 
 plt.show()

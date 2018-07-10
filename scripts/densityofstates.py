@@ -22,18 +22,18 @@ for i in range(0,len(w2)): #Define o eixo x, deslocando omega²
 print(counts)
 
 #Faz gráfico de barras
-plt.title('Densidade de estados para 1000 massas')
+plt.title('Densidade de estados para 100 massas')
 plt.bar(x_axis, counts, width=size, color='w', edgecolor='r') #Gráfico de barras
 
 #Faz os ticks dos eixos
 plt.xticks(np.arange(0, 4.1, 0.4))
-plt.yticks(np.arange(0,400,20))
+plt.yticks(np.arange(0,400,2))
 plt.xlabel(r'$\omega^2$')
 plt.ylabel('Count')
 
 #Intervalo dos eixos do gráfico
-plt.axis([-0.05, 4, 0, 220]) #ALTERAR ÚLTIMO VALOR PARA MUDAR VALOR MÁXIMO DE Y (22 p 100, 220 p 1000)
+plt.axis([-0.05, 4, 0, 22]) #ALTERAR ÚLTIMO VALOR PARA MUDAR VALOR MÁXIMO DE Y (22 p 100, 220 p 1000)
 #plt.xticks(x_axis)
 
-plt.savefig('density-1000.jpg')
+plt.savefig('density-100.jpg')
 plt.show()
